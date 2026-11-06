@@ -1,0 +1,108 @@
+{
+  "grid": {
+    "height": 4,
+    "width": 4
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "schema_version": 1,
+  "verification": {
+    "independent": {
+      "checked_quadruples": 1820,
+      "distance_count": 14,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 1820,
+      "distance_count": 14,
+      "errors": [],
+      "squared_distances": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "8",
+        "9",
+        "11",
+        "12",
+        "17",
+        "18",
+        "19",
+        "22",
+        "27"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}

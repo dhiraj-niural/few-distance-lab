@@ -1,0 +1,68 @@
+{
+  "claimed_distance_count": 4,
+  "grid": {
+    "height": 3,
+    "width": 3
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "schema_version": 1,
+  "search": {
+    "budget": 200000,
+    "complete": true,
+    "domain_optimal": true,
+    "domain_size": 126,
+    "elapsed_seconds": 0.0001404170000000038,
+    "evaluations": 126,
+    "method": "exhaustive",
+    "minimizer_count": 1,
+    "seed": null,
+    "symmetry_pruning": false,
+    "termination": "domain_exhausted"
+  },
+  "verification": {
+    "independent": {
+      "checked_quadruples": 5,
+      "distance_count": 4,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 5,
+      "distance_count": 4,
+      "errors": [],
+      "squared_distances": [
+        "3",
+        "4",
+        "8",
+        "12"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}

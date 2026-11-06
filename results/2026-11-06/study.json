@@ -1,0 +1,349 @@
+{
+  "baseline_summary": [
+    {
+      "best": 5,
+      "domain_optimum": 5,
+      "median": 5.0,
+      "method": "random",
+      "n": 6,
+      "optimum_hits": 10,
+      "runs": 10,
+      "side": 4,
+      "total_evaluations": 10000,
+      "worst": 5
+    },
+    {
+      "best": 5,
+      "domain_optimum": 5,
+      "median": 5.0,
+      "method": "swap",
+      "n": 6,
+      "optimum_hits": 10,
+      "runs": 10,
+      "side": 4,
+      "total_evaluations": 10000,
+      "worst": 5
+    },
+    {
+      "best": 6,
+      "domain_optimum": 6,
+      "median": 7.0,
+      "method": "random",
+      "n": 8,
+      "optimum_hits": 1,
+      "runs": 10,
+      "side": 4,
+      "total_evaluations": 10000,
+      "worst": 8
+    },
+    {
+      "best": 6,
+      "domain_optimum": 6,
+      "median": 6.5,
+      "method": "swap",
+      "n": 8,
+      "optimum_hits": 5,
+      "runs": 10,
+      "side": 4,
+      "total_evaluations": 10000,
+      "worst": 7
+    },
+    {
+      "best": 9,
+      "domain_optimum": 9,
+      "median": 9.0,
+      "method": "random",
+      "n": 10,
+      "optimum_hits": 7,
+      "runs": 10,
+      "side": 4,
+      "total_evaluations": 10000,
+      "worst": 10
+    },
+    {
+      "best": 9,
+      "domain_optimum": 9,
+      "median": 9.0,
+      "method": "swap",
+      "n": 10,
+      "optimum_hits": 10,
+      "runs": 10,
+      "side": 4,
+      "total_evaluations": 10000,
+      "worst": 9
+    },
+    {
+      "best": 10,
+      "domain_optimum": 10,
+      "median": 10.5,
+      "method": "random",
+      "n": 12,
+      "optimum_hits": 5,
+      "runs": 10,
+      "side": 4,
+      "total_evaluations": 10000,
+      "worst": 12
+    },
+    {
+      "best": 10,
+      "domain_optimum": 10,
+      "median": 10.0,
+      "method": "swap",
+      "n": 12,
+      "optimum_hits": 8,
+      "runs": 10,
+      "side": 4,
+      "total_evaluations": 10000,
+      "worst": 11
+    },
+    {
+      "best": 7,
+      "domain_optimum": null,
+      "median": 8.0,
+      "method": "random",
+      "n": 8,
+      "optimum_hits": null,
+      "runs": 10,
+      "side": 5,
+      "total_evaluations": 20000,
+      "worst": 9
+    },
+    {
+      "best": 6,
+      "domain_optimum": null,
+      "median": 7.0,
+      "method": "swap",
+      "n": 8,
+      "optimum_hits": null,
+      "runs": 10,
+      "side": 5,
+      "total_evaluations": 20000,
+      "worst": 7
+    },
+    {
+      "best": 13,
+      "domain_optimum": null,
+      "median": 13.0,
+      "method": "random",
+      "n": 12,
+      "optimum_hits": null,
+      "runs": 10,
+      "side": 5,
+      "total_evaluations": 20000,
+      "worst": 13
+    },
+    {
+      "best": 10,
+      "domain_optimum": null,
+      "median": 10.0,
+      "method": "swap",
+      "n": 12,
+      "optimum_hits": null,
+      "runs": 10,
+      "side": 5,
+      "total_evaluations": 20000,
+      "worst": 11
+    },
+    {
+      "best": 16,
+      "domain_optimum": null,
+      "median": 16.0,
+      "method": "random",
+      "n": 16,
+      "optimum_hits": null,
+      "runs": 10,
+      "side": 5,
+      "total_evaluations": 20000,
+      "worst": 17
+    },
+    {
+      "best": 14,
+      "domain_optimum": null,
+      "median": 14.0,
+      "method": "swap",
+      "n": 16,
+      "optimum_hits": null,
+      "runs": 10,
+      "side": 5,
+      "total_evaluations": 20000,
+      "worst": 15
+    }
+  ],
+  "claim": "Restricted-domain optima and heuristic observations; no unrestricted planar or novelty claim.",
+  "created_at": "2026-11-06T10:23:43.052670+00:00",
+  "domain_checks": [
+    "certificates/domain-3x3.json",
+    "certificates/domain-4x4.json",
+    "certificates/domain-5x5.json"
+  ],
+  "elapsed_seconds": 1.354533167,
+  "exhaustive": [
+    {
+      "certificate": "certificates/exact-3x3-n4.json",
+      "distances": 3,
+      "evaluations": 126,
+      "minimizer_count": 10,
+      "n": 4,
+      "side": 3
+    },
+    {
+      "certificate": "certificates/exact-3x3-n5.json",
+      "distances": 4,
+      "evaluations": 126,
+      "minimizer_count": 1,
+      "n": 5,
+      "side": 3
+    },
+    {
+      "certificate": "certificates/exact-3x3-n6.json",
+      "distances": 5,
+      "evaluations": 84,
+      "minimizer_count": 6,
+      "n": 6,
+      "side": 3
+    },
+    {
+      "certificate": "certificates/exact-3x3-n7.json",
+      "distances": 7,
+      "evaluations": 36,
+      "minimizer_count": 6,
+      "n": 7,
+      "side": 3
+    },
+    {
+      "certificate": "certificates/exact-3x3-n8.json",
+      "distances": 8,
+      "evaluations": 9,
+      "minimizer_count": 9,
+      "n": 8,
+      "side": 3
+    },
+    {
+      "certificate": "certificates/exact-3x3-n9.json",
+      "distances": 8,
+      "evaluations": 1,
+      "minimizer_count": 1,
+      "n": 9,
+      "side": 3
+    },
+    {
+      "certificate": "certificates/exact-4x4-n4.json",
+      "distances": 3,
+      "evaluations": 1820,
+      "minimizer_count": 82,
+      "n": 4,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n5.json",
+      "distances": 4,
+      "evaluations": 4368,
+      "minimizer_count": 4,
+      "n": 5,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n6.json",
+      "distances": 5,
+      "evaluations": 8008,
+      "minimizer_count": 38,
+      "n": 6,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n7.json",
+      "distances": 6,
+      "evaluations": 11440,
+      "minimizer_count": 20,
+      "n": 7,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n8.json",
+      "distances": 6,
+      "evaluations": 12870,
+      "minimizer_count": 2,
+      "n": 8,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n9.json",
+      "distances": 8,
+      "evaluations": 11440,
+      "minimizer_count": 4,
+      "n": 9,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n10.json",
+      "distances": 9,
+      "evaluations": 8008,
+      "minimizer_count": 10,
+      "n": 10,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n11.json",
+      "distances": 10,
+      "evaluations": 4368,
+      "minimizer_count": 24,
+      "n": 11,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n12.json",
+      "distances": 10,
+      "evaluations": 1820,
+      "minimizer_count": 2,
+      "n": 12,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n13.json",
+      "distances": 13,
+      "evaluations": 560,
+      "minimizer_count": 52,
+      "n": 13,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n14.json",
+      "distances": 13,
+      "evaluations": 120,
+      "minimizer_count": 4,
+      "n": 14,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n15.json",
+      "distances": 14,
+      "evaluations": 16,
+      "minimizer_count": 16,
+      "n": 15,
+      "side": 4
+    },
+    {
+      "certificate": "certificates/exact-4x4-n16.json",
+      "distances": 14,
+      "evaluations": 1,
+      "minimizer_count": 1,
+      "n": 16,
+      "side": 4
+    }
+  ],
+  "external_compute": false,
+  "model_calls": 0,
+  "python": "3.9.6",
+  "schema_version": 1,
+  "scope": "q=2 stretched-grid subsets; fixed candidate-evaluation budgets",
+  "source_sha256": {
+    "__init__.py": "76e81b1b92690b1508f231f98237d58557fbdc28a7250379881aead35618c1af",
+    "__main__.py": "4ac42b222c0f0194fde1b56b5af873543afb9197d2ea22af4f707e720e813ef0",
+    "checker.py": "eaba737b20bf0db23ab4952b055d412f7eaaf7e8464c35aab30e4c61775e2c90",
+    "independent.py": "e635088263016becbfcd8fcc1e66faf5f240294b6da6f4c109b3b159a1a3c1f4",
+    "search.py": "c22dfcb62f2c15e69d3b97b2ba909c9e13c628900a8ddc08031968adcb4d238a",
+    "study.py": "ebc2f92442b691f6449164c99fcf8d05ce5a545fc23146ff71152573fa3cdfe4"
+  },
+  "trials": 140,
+  "verified_certificates": 162
+}
