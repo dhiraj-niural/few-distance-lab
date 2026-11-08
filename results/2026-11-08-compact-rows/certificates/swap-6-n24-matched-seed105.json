@@ -1,0 +1,178 @@
+{
+  "claimed_distance_count": 31,
+  "grid": {
+    "height": 6,
+    "width": 6
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "schema_version": 1,
+  "search": {
+    "accepted_moves": 4,
+    "budget": 5,
+    "complete": true,
+    "domain_optimal": false,
+    "domain_size": 1251677700,
+    "elapsed_seconds": 0.000473707999999462,
+    "evaluations": 5,
+    "improving_moves": 0,
+    "method": "swap",
+    "plateau_acceptances": 4,
+    "plateau_limit": 24,
+    "random_draws": 1,
+    "rejected_moves": 0,
+    "restart_after": 96,
+    "restarts": 0,
+    "seed": 105,
+    "swap_proposals": 4,
+    "termination": "budget_exhausted"
+  },
+  "verification": {
+    "independent": {
+      "checked_quadruples": 10626,
+      "distance_count": 31,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 10626,
+      "distance_count": 31,
+      "errors": [],
+      "squared_distances": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "8",
+        "9",
+        "11",
+        "12",
+        "16",
+        "17",
+        "18",
+        "19",
+        "22",
+        "24",
+        "25",
+        "27",
+        "32",
+        "33",
+        "34",
+        "36",
+        "41",
+        "43",
+        "48",
+        "50",
+        "51",
+        "54",
+        "57",
+        "59",
+        "66",
+        "75"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}

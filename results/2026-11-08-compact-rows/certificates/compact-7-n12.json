@@ -1,0 +1,103 @@
+{
+  "claimed_distance_count": 10,
+  "grid": {
+    "height": 7,
+    "width": 7
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "schema_version": 1,
+  "search": {
+    "budget": 84,
+    "complete": true,
+    "domain_optimal": false,
+    "domain_size": 92263734836,
+    "elapsed_seconds": 0.001516000000000517,
+    "evaluations": 84,
+    "family_optimal": true,
+    "family_size": 84,
+    "method": "compact_rows",
+    "seed": null,
+    "termination": "family_exhausted",
+    "translation_policy": "minimum_x_and_y_zero"
+  },
+  "verification": {
+    "independent": {
+      "checked_quadruples": 495,
+      "distance_count": 10,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 495,
+      "distance_count": 10,
+      "errors": [],
+      "squared_distances": [
+        "2",
+        "8",
+        "16",
+        "18",
+        "24",
+        "32",
+        "34",
+        "48",
+        "50",
+        "66"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}

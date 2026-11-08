@@ -1,0 +1,142 @@
+{
+  "claimed_distance_count": 17,
+  "grid": {
+    "height": 7,
+    "width": 7
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      4
+    ]
+  ],
+  "schema_version": 1,
+  "search": {
+    "budget": 42,
+    "complete": true,
+    "domain_optimal": false,
+    "domain_size": 28277527346376,
+    "elapsed_seconds": 0.0020457499999997353,
+    "evaluations": 42,
+    "family_optimal": true,
+    "family_size": 42,
+    "method": "compact_rows",
+    "seed": null,
+    "termination": "family_exhausted",
+    "translation_policy": "minimum_x_and_y_zero"
+  },
+  "verification": {
+    "independent": {
+      "checked_quadruples": 4845,
+      "distance_count": 17,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 4845,
+      "distance_count": 17,
+      "errors": [],
+      "squared_distances": [
+        "2",
+        "4",
+        "6",
+        "8",
+        "12",
+        "16",
+        "18",
+        "22",
+        "24",
+        "32",
+        "34",
+        "36",
+        "38",
+        "44",
+        "48",
+        "54",
+        "68"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}

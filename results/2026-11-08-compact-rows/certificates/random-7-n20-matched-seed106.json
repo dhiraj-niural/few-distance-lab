@@ -1,0 +1,161 @@
+{
+  "claimed_distance_count": 32,
+  "grid": {
+    "height": 7,
+    "width": 7
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      0
+    ]
+  ],
+  "schema_version": 1,
+  "search": {
+    "accepted_moves": 0,
+    "budget": 42,
+    "complete": true,
+    "domain_optimal": false,
+    "domain_size": 28277527346376,
+    "elapsed_seconds": 0.0013398340000003728,
+    "evaluations": 42,
+    "improving_moves": 0,
+    "method": "random",
+    "plateau_acceptances": 0,
+    "random_draws": 42,
+    "rejected_moves": 0,
+    "restarts": 0,
+    "seed": 106,
+    "swap_proposals": 0,
+    "termination": "budget_exhausted"
+  },
+  "verification": {
+    "independent": {
+      "checked_quadruples": 4845,
+      "distance_count": 32,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 4845,
+      "distance_count": 32,
+      "errors": [],
+      "squared_distances": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "8",
+        "9",
+        "11",
+        "12",
+        "16",
+        "17",
+        "18",
+        "19",
+        "22",
+        "24",
+        "25",
+        "27",
+        "32",
+        "33",
+        "34",
+        "41",
+        "43",
+        "48",
+        "50",
+        "51",
+        "54",
+        "57",
+        "59",
+        "66",
+        "75",
+        "76",
+        "108"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}

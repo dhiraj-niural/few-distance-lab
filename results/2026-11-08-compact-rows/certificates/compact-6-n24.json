@@ -1,0 +1,161 @@
+{
+  "claimed_distance_count": 20,
+  "grid": {
+    "height": 6,
+    "width": 6
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "schema_version": 1,
+  "search": {
+    "budget": 5,
+    "complete": true,
+    "domain_optimal": false,
+    "domain_size": 1251677700,
+    "elapsed_seconds": 0.0017064580000001328,
+    "evaluations": 5,
+    "family_optimal": true,
+    "family_size": 5,
+    "method": "compact_rows",
+    "seed": null,
+    "termination": "family_exhausted",
+    "translation_policy": "minimum_x_and_y_zero"
+  },
+  "verification": {
+    "independent": {
+      "checked_quadruples": 10626,
+      "distance_count": 20,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 10626,
+      "distance_count": 20,
+      "errors": [],
+      "squared_distances": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "8",
+        "9",
+        "11",
+        "12",
+        "16",
+        "17",
+        "18",
+        "19",
+        "22",
+        "24",
+        "25",
+        "27",
+        "33",
+        "34",
+        "43"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}

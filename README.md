@@ -4,6 +4,10 @@ How few distances can a set of points have if every four points must determine a
 
 This project studies finite subsets of the stretched grid `(x, √2 y)`. Squared distances are integers, `dx² + 2dy²`, so every result can be checked without floating-point tolerances.
 
+## Latest result · 8 November 2026
+
+A compact-row construction beat the swap search's median on all seven new 6×6/7×7 instances, evaluating only 5–84 configurations versus 2,000 per swap run. It beat the best observed swap run on three instances and tied it on four. All 289 saved certificates pass both exact validators. This is a conventional geometric baseline, with no AI advantage or unrestricted optimum claimed. [Comparison and reproduction](docs/compact-rows.md).
+
 ## First results · 6 November 2026
 
 - Exhaustively enumerated **65,221 subsets** across 3×3 and 4×4 grids, establishing 19 restricted-domain optima.
@@ -38,4 +42,4 @@ Use an empty destination for each study. Seeds and candidate counts are reproduc
 
 The stretched-lattice construction comes from existing mathematics. The immediate starting point is Benjamin Grayzel's [paper on Erdős problem #659](https://arxiv.org/abs/2601.09102v2), January 2026. Earlier lattice work includes [Moree and Osburn](https://arxiv.org/abs/math/0604163). This repository explores small finite instances of that construction.
 
-The next research question is whether a proposed construction or search procedure can outperform these baselines on fresh instances under the same candidate budget. A numerical pattern would be a conjecture to investigate, not a proof.
+The next research question is whether an improved search procedure adds value beyond the compact construction baseline. A numerical pattern would be a conjecture to investigate, not a proof.

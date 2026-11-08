@@ -1,0 +1,149 @@
+{
+  "claimed_distance_count": 26,
+  "grid": {
+    "height": 6,
+    "width": 6
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "schema_version": 1,
+  "search": {
+    "accepted_moves": 7,
+    "budget": 16,
+    "complete": true,
+    "domain_optimal": false,
+    "domain_size": 9075135300,
+    "elapsed_seconds": 0.0005397080000002497,
+    "evaluations": 16,
+    "improving_moves": 1,
+    "method": "swap",
+    "plateau_acceptances": 6,
+    "plateau_limit": 18,
+    "random_draws": 1,
+    "rejected_moves": 8,
+    "restart_after": 72,
+    "restarts": 0,
+    "seed": 107,
+    "swap_proposals": 15,
+    "termination": "budget_exhausted"
+  },
+  "verification": {
+    "independent": {
+      "checked_quadruples": 3060,
+      "distance_count": 26,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 3060,
+      "distance_count": 26,
+      "errors": [],
+      "squared_distances": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "8",
+        "9",
+        "11",
+        "12",
+        "16",
+        "17",
+        "18",
+        "19",
+        "22",
+        "24",
+        "25",
+        "27",
+        "32",
+        "33",
+        "34",
+        "36",
+        "41",
+        "43",
+        "50",
+        "54",
+        "59"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}
