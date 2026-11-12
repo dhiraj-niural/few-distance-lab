@@ -52,7 +52,7 @@ Every distinct member of each defined construction family is evaluated once. Fam
 
 The family was chosen after seeing the initial small-grid results, and this is one prespecified exploratory batch. There is no tuned AI method or unbiased estimate of AI's contribution. No model calls, external compute, new mathematical formula or novelty claim. The known stretched-lattice construction remains attributed in [the mathematics note](mathematics.md).
 
-The practical result is a stronger baseline: a future model-designed search rule should compete against compact constructions as well as random sampling and swaps. A useful next question is whether local improvement from these structured starting points adds anything. That experiment has not been run here.
+The practical result is a stronger baseline: a future model-designed search rule should compete against compact constructions as well as random sampling and swaps. A useful next question is whether local improvement from these structured starting points adds anything. The later [one-exchange audit](one-exchange.md) checks the immediate neighborhood of each saved winner; the 8 November batch itself did not run that follow-up.
 
 ## Reproduce
 

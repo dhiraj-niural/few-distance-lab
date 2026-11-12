@@ -1,0 +1,1140 @@
+{
+  "artifact_sha256": {
+    "certificates/compact-6-n10-best-neighbor.json": "ff7e680e617be693db884ea815be989d4b2c49cbb4d8b68855b512de1cb75e2a",
+    "certificates/compact-6-n15-best-neighbor.json": "5fb15a8b35fb0da5d2a0d57750c867b91d3eef094c02358baaf2df84978e97cb",
+    "certificates/compact-6-n18-best-neighbor.json": "c1cc216a0494ae33396507b11dda952100247759876a28532080438fe6654764",
+    "certificates/compact-6-n24-best-neighbor.json": "9672c3a3837a415420cc33ef0a1cb5ae76c1fc693b5e760c83e37bdcec3f44b4",
+    "certificates/compact-7-n12-best-neighbor.json": "c27cd58b557a06cd91c7b75a6b3ea7644f220c92690438c240d589da5da6bcba",
+    "certificates/compact-7-n20-best-neighbor.json": "39b572b4c7d54320eda72de671764b111cd78bbc8f8f69da149f9308bcdbf4bd",
+    "certificates/compact-7-n30-best-neighbor.json": "b7abf23865b0838e26b13c7d7bc2a0d779be77be53ad2e66cd41ce5255bebaff",
+    "neighbors.csv": "568fa760d82335c3460eac4b339775ef220b5de2fbd1eced0eb45faee9a6454b"
+  },
+  "complete": true,
+  "created_at": "2026-11-12T07:36:54.129397+00:00",
+  "elapsed_seconds": 0.7383122919999999,
+  "evaluated_neighbors": 2781,
+  "expected_neighbors": 2781,
+  "external_compute": false,
+  "model_calls": 0,
+  "original_score_evaluations": 7,
+  "protocol": {
+    "accounting": "Neighbors count as candidate evaluations. Original scores and two independent certificate validators are reported separately.",
+    "exclusions": [
+      "plateau traversal",
+      "stochastic campaigns",
+      "new model calls",
+      "paid compute",
+      "network calls"
+    ],
+    "expected_candidate_evaluations": 2781,
+    "frozen_at": "2026-11-12T07:36:46.819430+00:00",
+    "inputs": [
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-6-n10.json",
+        "sha256": "add45b4454c72b2d6083a16cc16f4c97cf13b01c414e3b9302fe64c55628994d"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-6-n15.json",
+        "sha256": "f4dd371030bebd84f557d97d32f5030a86cca199274c1feaec96107268a48fda"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-6-n18.json",
+        "sha256": "2c89453634238450b93998e71dd19ce093608e4b7bdc02343376f3596bc77c9f"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-6-n24.json",
+        "sha256": "7b0235a6ee45045ce2b5454500025d157134a45ae974c8119bcfae2ff47998ee"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-7-n12.json",
+        "sha256": "fcb94cadbfbf99510529dc3274064125d2cca8c4b5548905597996c297c5212c"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-7-n20.json",
+        "sha256": "f1aaa5fc72b777edf97668c86ba3317d84c4a77eff6acc1158c181878059978d"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-7-n30.json",
+        "sha256": "58c4fe868c794dca2c38ba12e2a0d957ad708e4d41d12c46f1f589bf90425b7e"
+      }
+    ],
+    "interpretation": "Only fixed-witness one-exchange local optimality. Equal-score neighbors are plateau opportunities, not proven escapes. No global or finite-domain optimum follows.",
+    "max_candidate_evaluations": 10000,
+    "max_runtime_seconds": 60,
+    "metric": "dx^2 + 2 dy^2",
+    "neighborhood": "All n*(width*height-n) fixed-witness one-exchange neighbors; no symmetry quotient.",
+    "order": "Removed point lexicographic, then vacant point lexicographic; first minimum breaks ties.",
+    "outputs": [
+      "full neighbor move/score CSV",
+      "per-witness histogram and better/equal/worse counts",
+      "best-neighbor coordinates and dual certificates",
+      "completeness and provenance manifest"
+    ],
+    "question": "Does any single occupied-to-vacant replacement improve each saved compact winner?",
+    "schema_version": 1,
+    "source_sha256": {
+      "few_distance/checker.py": "eaba737b20bf0db23ab4952b055d412f7eaaf7e8464c35aab30e4c61775e2c90",
+      "few_distance/independent.py": "e635088263016becbfcd8fcc1e66faf5f240294b6da6f4c109b3b159a1a3c1f4",
+      "few_distance/neighborhood.py": "70f8b2c430673df74eda8c47081457d3cf722554cbce0419a1d520d22492abaa",
+      "tests/test_neighborhood.py": "f1178b13a6172c4346c4f9cb5aac8d53cb42fd51e25f028045c6d8b3b7864120"
+    }
+  },
+  "protocol_sha256": "50b698a6a6bc153cd9ef2021c82198c8ef5046ca0ac4fcd3ce9adcef040673da",
+  "python": "3.9.6",
+  "reports": [
+    {
+      "best_move": {
+        "added": [
+          0,
+          5
+        ],
+        "removed": [
+          0,
+          0
+        ],
+        "score": 9
+      },
+      "best_neighbor_certificate": "certificates/compact-6-n10-best-neighbor.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "best_neighbor_score": 9,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 260,
+      "expected_neighbors": 260,
+      "grid": {
+        "height": 6,
+        "width": 6
+      },
+      "histogram": {
+        "9": 4,
+        "10": 16,
+        "11": 10,
+        "12": 22,
+        "13": 50,
+        "14": 24,
+        "15": 36,
+        "16": 64,
+        "17": 34
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-6-n10.json",
+      "input_sha256": "add45b4454c72b2d6083a16cc16f4c97cf13b01c414e3b9302fe64c55628994d",
+      "n": 10,
+      "original_score": 8,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 210,
+          "distance_count": 8,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 210,
+          "distance_count": 8,
+          "errors": [],
+          "squared_distances": [
+            "2",
+            "8",
+            "16",
+            "18",
+            "24",
+            "32",
+            "34",
+            "48"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 260
+    },
+    {
+      "best_move": {
+        "added": [
+          2,
+          5
+        ],
+        "removed": [
+          2,
+          0
+        ],
+        "score": 14
+      },
+      "best_neighbor_certificate": "certificates/compact-6-n15-best-neighbor.json",
+      "best_neighbor_points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "best_neighbor_score": 14,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 315,
+      "expected_neighbors": 315,
+      "grid": {
+        "height": 6,
+        "width": 6
+      },
+      "histogram": {
+        "14": 1,
+        "15": 20,
+        "16": 24,
+        "18": 30,
+        "19": 8,
+        "20": 54,
+        "21": 29,
+        "22": 66,
+        "23": 38,
+        "24": 18,
+        "25": 23,
+        "26": 4
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-6-n15.json",
+      "input_sha256": "f4dd371030bebd84f557d97d32f5030a86cca199274c1feaec96107268a48fda",
+      "n": 15,
+      "original_score": 13,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 1365,
+          "distance_count": 13,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 1365,
+          "distance_count": 13,
+          "errors": [],
+          "squared_distances": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "12",
+            "16",
+            "18",
+            "22",
+            "24",
+            "32",
+            "34",
+            "36",
+            "48"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 315
+    },
+    {
+      "best_move": {
+        "added": [
+          3,
+          3
+        ],
+        "removed": [
+          0,
+          0
+        ],
+        "score": 22
+      },
+      "best_neighbor_certificate": "certificates/compact-6-n18-best-neighbor.json",
+      "best_neighbor_points": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "best_neighbor_score": 22,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 324,
+      "expected_neighbors": 324,
+      "grid": {
+        "height": 6,
+        "width": 6
+      },
+      "histogram": {
+        "22": 8,
+        "23": 76,
+        "24": 76,
+        "25": 56,
+        "26": 12,
+        "27": 24,
+        "28": 20,
+        "29": 16,
+        "30": 28,
+        "31": 8
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-6-n18.json",
+      "input_sha256": "2c89453634238450b93998e71dd19ce093608e4b7bdc02343376f3596bc77c9f",
+      "n": 18,
+      "original_score": 15,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 3060,
+          "distance_count": 15,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 3060,
+          "distance_count": 15,
+          "errors": [],
+          "squared_distances": [
+            "1",
+            "4",
+            "8",
+            "9",
+            "12",
+            "16",
+            "17",
+            "24",
+            "25",
+            "32",
+            "33",
+            "36",
+            "41",
+            "48",
+            "57"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 324
+    },
+    {
+      "best_move": {
+        "added": [
+          3,
+          4
+        ],
+        "removed": [
+          0,
+          0
+        ],
+        "score": 22
+      },
+      "best_neighbor_certificate": "certificates/compact-6-n24-best-neighbor.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "best_neighbor_score": 22,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 288,
+      "expected_neighbors": 288,
+      "grid": {
+        "height": 6,
+        "width": 6
+      },
+      "histogram": {
+        "22": 4,
+        "23": 52,
+        "24": 50,
+        "25": 38,
+        "26": 8,
+        "27": 40,
+        "28": 16,
+        "29": 32,
+        "30": 22,
+        "31": 26
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-6-n24.json",
+      "input_sha256": "7b0235a6ee45045ce2b5454500025d157134a45ae974c8119bcfae2ff47998ee",
+      "n": 24,
+      "original_score": 20,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 10626,
+          "distance_count": 20,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 10626,
+          "distance_count": 20,
+          "errors": [],
+          "squared_distances": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6",
+            "8",
+            "9",
+            "11",
+            "12",
+            "16",
+            "17",
+            "18",
+            "19",
+            "22",
+            "24",
+            "25",
+            "27",
+            "33",
+            "34",
+            "43"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 288
+    },
+    {
+      "best_move": {
+        "added": [
+          0,
+          6
+        ],
+        "removed": [
+          0,
+          0
+        ],
+        "score": 11
+      },
+      "best_neighbor_certificate": "certificates/compact-7-n12-best-neighbor.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "best_neighbor_score": 11,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 444,
+      "expected_neighbors": 444,
+      "grid": {
+        "height": 7,
+        "width": 7
+      },
+      "histogram": {
+        "11": 4,
+        "12": 20,
+        "14": 24,
+        "15": 24,
+        "16": 48,
+        "17": 52,
+        "18": 80,
+        "19": 64,
+        "20": 88,
+        "21": 40
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-7-n12.json",
+      "input_sha256": "fcb94cadbfbf99510529dc3274064125d2cca8c4b5548905597996c297c5212c",
+      "n": 12,
+      "original_score": 10,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 495,
+          "distance_count": 10,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 495,
+          "distance_count": 10,
+          "errors": [],
+          "squared_distances": [
+            "2",
+            "8",
+            "16",
+            "18",
+            "24",
+            "32",
+            "34",
+            "48",
+            "50",
+            "66"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 444
+    },
+    {
+      "best_move": {
+        "added": [
+          4,
+          5
+        ],
+        "removed": [
+          0,
+          0
+        ],
+        "score": 18
+      },
+      "best_neighbor_certificate": "certificates/compact-7-n20-best-neighbor.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "best_neighbor_score": 18,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 580,
+      "expected_neighbors": 580,
+      "grid": {
+        "height": 7,
+        "width": 7
+      },
+      "histogram": {
+        "18": 4,
+        "19": 42,
+        "20": 34,
+        "21": 8,
+        "22": 52,
+        "23": 14,
+        "24": 68,
+        "25": 38,
+        "26": 56,
+        "27": 104,
+        "28": 24,
+        "29": 70,
+        "30": 44,
+        "31": 22
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-7-n20.json",
+      "input_sha256": "f1aaa5fc72b777edf97668c86ba3317d84c4a77eff6acc1158c181878059978d",
+      "n": 20,
+      "original_score": 17,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 4845,
+          "distance_count": 17,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 4845,
+          "distance_count": 17,
+          "errors": [],
+          "squared_distances": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "12",
+            "16",
+            "18",
+            "22",
+            "24",
+            "32",
+            "34",
+            "36",
+            "38",
+            "44",
+            "48",
+            "54",
+            "68"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 580
+    },
+    {
+      "best_move": {
+        "added": [
+          6,
+          2
+        ],
+        "removed": [
+          0,
+          0
+        ],
+        "score": 27
+      },
+      "best_neighbor_certificate": "certificates/compact-7-n30-best-neighbor.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "best_neighbor_score": 27,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 570,
+      "expected_neighbors": 570,
+      "grid": {
+        "height": 7,
+        "width": 7
+      },
+      "histogram": {
+        "27": 34,
+        "28": 68,
+        "29": 116,
+        "30": 64,
+        "31": 48,
+        "32": 8,
+        "33": 60,
+        "34": 38,
+        "35": 44,
+        "36": 24,
+        "37": 36,
+        "38": 13,
+        "39": 17
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-7-n30.json",
+      "input_sha256": "58c4fe868c794dca2c38ba12e2a0d957ad708e4d41d12c46f1f589bf90425b7e",
+      "n": 30,
+      "original_score": 25,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 27405,
+          "distance_count": 25,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 27405,
+          "distance_count": 25,
+          "errors": [],
+          "squared_distances": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6",
+            "8",
+            "9",
+            "11",
+            "12",
+            "16",
+            "17",
+            "18",
+            "19",
+            "22",
+            "24",
+            "25",
+            "27",
+            "32",
+            "33",
+            "34",
+            "36",
+            "41",
+            "43",
+            "48",
+            "57"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 570
+    }
+  ],
+  "scope": "Fixed-witness one-exchange local optimality only; equality is a plateau opportunity, not a proven escape. No domain/global optimality.",
+  "verified_certificates": 14
+}
