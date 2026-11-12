@@ -6,7 +6,7 @@ This project studies finite subsets of the stretched grid `(x, √2 y)`. Squared
 
 ## Latest result · 12 November 2026
 
-Every single-point replacement worsens each of the seven saved compact constructions: **2,781 neighbors, zero improvements and zero ties**. These are strict local minima within their bounding grids, not global optima. A search improving these starts must move several points together or initially accept a worse score. All 14 original/best-neighbor witnesses pass both exact validators; the full suite has 49 tests. [Exact neighborhood audit](docs/one-exchange.md).
+An exact audit of **273,781 two-point replacements** found no improvements, but one genuinely different 20-point configuration with the same count of 17 distinct distances. Two other ties are translations. Together with the earlier single-point audit, this identifies local barriers and a shape-changing plateau move, without proving global optimality or an improving path. All 54 tests pass; an independent implementation agrees on every move score. [Two-point audit](docs/two-exchange.md) · [Single-point audit](docs/one-exchange.md).
 
 ## Construction baseline · 8 November 2026
 
@@ -46,4 +46,4 @@ Use an empty destination for each study. Seeds and candidate counts are reproduc
 
 The stretched-lattice construction comes from existing mathematics. The immediate starting point is Benjamin Grayzel's [paper on Erdős problem #659](https://arxiv.org/abs/2601.09102v2), January 2026. Earlier lattice work includes [Moree and Osburn](https://arxiv.org/abs/math/0604163). This repository explores small finite instances of that construction.
 
-The next research question is whether coordinated moves or controlled worsening steps can improve the compact construction baseline. Monotone single-point refinement cannot leave the seven audited starts. A numerical pattern would be a conjecture to investigate, not a proof.
+The next research question is whether traversing non-congruent equal-score configurations or controlled worsening steps can improve the compact baseline. No improving continuation has been demonstrated. A numerical pattern would be a conjecture to investigate, not a proof.

@@ -1,0 +1,65 @@
+{
+  "accounting": "Neighbors count as candidate evaluations. Seven original scores and dual original/best certificate validations are reported separately. Preflight rejects the entire batch before candidate evaluation if over cap.",
+  "exclusions": [
+    "plateau traversal",
+    "adaptive witness selection",
+    "stochastic campaigns",
+    "paid compute",
+    "network calls",
+    "model calls"
+  ],
+  "expected_candidate_evaluations": 273781,
+  "frozen_at": "2026-11-12T12:17:53.758799+00:00",
+  "inputs": [
+    {
+      "path": "results/2026-11-08-compact-rows/certificates/compact-6-n10.json",
+      "sha256": "add45b4454c72b2d6083a16cc16f4c97cf13b01c414e3b9302fe64c55628994d"
+    },
+    {
+      "path": "results/2026-11-08-compact-rows/certificates/compact-6-n15.json",
+      "sha256": "f4dd371030bebd84f557d97d32f5030a86cca199274c1feaec96107268a48fda"
+    },
+    {
+      "path": "results/2026-11-08-compact-rows/certificates/compact-6-n18.json",
+      "sha256": "2c89453634238450b93998e71dd19ce093608e4b7bdc02343376f3596bc77c9f"
+    },
+    {
+      "path": "results/2026-11-08-compact-rows/certificates/compact-6-n24.json",
+      "sha256": "7b0235a6ee45045ce2b5454500025d157134a45ae974c8119bcfae2ff47998ee"
+    },
+    {
+      "path": "results/2026-11-08-compact-rows/certificates/compact-7-n12.json",
+      "sha256": "fcb94cadbfbf99510529dc3274064125d2cca8c4b5548905597996c297c5212c"
+    },
+    {
+      "path": "results/2026-11-08-compact-rows/certificates/compact-7-n20.json",
+      "sha256": "f1aaa5fc72b777edf97668c86ba3317d84c4a77eff6acc1158c181878059978d"
+    },
+    {
+      "path": "results/2026-11-08-compact-rows/certificates/compact-7-n30.json",
+      "sha256": "58c4fe868c794dca2c38ba12e2a0d957ad708e4d41d12c46f1f589bf90425b7e"
+    }
+  ],
+  "interpretation": "Fixed saved witnesses and their original bounding grids only. Equal-score neighbors do not prove a subsequent escape. No finite-domain or unrestricted-plane optimum follows.",
+  "max_candidate_evaluations": 300000,
+  "max_runtime_seconds": 60,
+  "metric": "dx^2 + 2 dy^2",
+  "move_stream_serialization": "ASCII comma-separated rx1,ry1,rx2,ry2,ax1,ay1,ax2,ay2,score plus LF per move, no header. Per-witness SHA256 accumulates every move in enumeration order; regenerate using audit_neighborhood(retain_moves=True).",
+  "neighborhood": "All C(n,2)*C(width*height-n,2) distinct fixed-witness exact two-exchange neighbors; no symmetry quotient.",
+  "order": "Occupied and originally vacant coordinates lexicographic; removed pairs itertools.combinations order, then added pairs combinations order; first minimum breaks ties.",
+  "outputs": [
+    "Full per-witness score histogram and better/equal/worse counts",
+    "Best-neighbor coordinates and dual exact certificates",
+    "Per-witness move-stream digest",
+    "Completeness and provenance manifest"
+  ],
+  "question": "Does replacing exactly two occupied sites by exactly two originally vacant sites improve or tie any of the seven fixed compact winners?",
+  "schema_version": 1,
+  "source_sha256": {
+    "few_distance/checker.py": "eaba737b20bf0db23ab4952b055d412f7eaaf7e8464c35aab30e4c61775e2c90",
+    "few_distance/independent.py": "e635088263016becbfcd8fcc1e66faf5f240294b6da6f4c109b3b159a1a3c1f4",
+    "few_distance/neighborhood.py": "70f8b2c430673df74eda8c47081457d3cf722554cbce0419a1d520d22492abaa",
+    "few_distance/two_exchange.py": "cee9fe9b6564a6bd65b7e7170a20f15b55ddf6b7fddd96175904110ae0eca969",
+    "tests/test_two_exchange.py": "d96197ffbea9b59e74deeda2935961be66ad62867e8b56a1b4e7ad26386a3abe"
+  }
+}

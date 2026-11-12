@@ -1,0 +1,1270 @@
+{
+  "artifact_sha256": {
+    "certificates/compact-6-n10-best-two-exchange.json": "15748e6158ba15b1330a8e69fc0e78834e5be80eba23526ef1213909a3fe9ffd",
+    "certificates/compact-6-n15-best-two-exchange.json": "8936db6f6747873c09bd8cf6a85736026b725a73438975fc6d50ada9316c00d7",
+    "certificates/compact-6-n18-best-two-exchange.json": "0f5298ad406f416c482351cd52d59df646803c6c1a4af60b8b98b193e90095b7",
+    "certificates/compact-6-n24-best-two-exchange.json": "7384795823f91c83815b21f060cebab3849fc60360a409da540a7008174e089e",
+    "certificates/compact-7-n12-best-two-exchange.json": "52b7dc5fa6644e435e533ff72d53efa834c1580c560ab400afb5eeaf37fc1218",
+    "certificates/compact-7-n20-best-two-exchange.json": "f05b1c814b22c0a70400360d39c233e7ef7854859515176745f4d58c4040e1dd",
+    "certificates/compact-7-n30-best-two-exchange.json": "813a21b4629386938ae93f1450ce90e7e866d62a1bbb3b3835876a6ecc3c1b84"
+  },
+  "complete": true,
+  "created_at": "2026-11-12T12:17:53.807276+00:00",
+  "elapsed_seconds": 0.980621542,
+  "evaluated_neighbors": 273781,
+  "expected_neighbors": 273781,
+  "external_compute": false,
+  "model_calls": 0,
+  "original_score_evaluations": 7,
+  "protocol": {
+    "accounting": "Neighbors count as candidate evaluations. Seven original scores and dual original/best certificate validations are reported separately. Preflight rejects the entire batch before candidate evaluation if over cap.",
+    "exclusions": [
+      "plateau traversal",
+      "adaptive witness selection",
+      "stochastic campaigns",
+      "paid compute",
+      "network calls",
+      "model calls"
+    ],
+    "expected_candidate_evaluations": 273781,
+    "frozen_at": "2026-11-12T12:17:53.758799+00:00",
+    "inputs": [
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-6-n10.json",
+        "sha256": "add45b4454c72b2d6083a16cc16f4c97cf13b01c414e3b9302fe64c55628994d"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-6-n15.json",
+        "sha256": "f4dd371030bebd84f557d97d32f5030a86cca199274c1feaec96107268a48fda"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-6-n18.json",
+        "sha256": "2c89453634238450b93998e71dd19ce093608e4b7bdc02343376f3596bc77c9f"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-6-n24.json",
+        "sha256": "7b0235a6ee45045ce2b5454500025d157134a45ae974c8119bcfae2ff47998ee"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-7-n12.json",
+        "sha256": "fcb94cadbfbf99510529dc3274064125d2cca8c4b5548905597996c297c5212c"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-7-n20.json",
+        "sha256": "f1aaa5fc72b777edf97668c86ba3317d84c4a77eff6acc1158c181878059978d"
+      },
+      {
+        "path": "results/2026-11-08-compact-rows/certificates/compact-7-n30.json",
+        "sha256": "58c4fe868c794dca2c38ba12e2a0d957ad708e4d41d12c46f1f589bf90425b7e"
+      }
+    ],
+    "interpretation": "Fixed saved witnesses and their original bounding grids only. Equal-score neighbors do not prove a subsequent escape. No finite-domain or unrestricted-plane optimum follows.",
+    "max_candidate_evaluations": 300000,
+    "max_runtime_seconds": 60,
+    "metric": "dx^2 + 2 dy^2",
+    "move_stream_serialization": "ASCII comma-separated rx1,ry1,rx2,ry2,ax1,ay1,ax2,ay2,score plus LF per move, no header. Per-witness SHA256 accumulates every move in enumeration order; regenerate using audit_neighborhood(retain_moves=True).",
+    "neighborhood": "All C(n,2)*C(width*height-n,2) distinct fixed-witness exact two-exchange neighbors; no symmetry quotient.",
+    "order": "Occupied and originally vacant coordinates lexicographic; removed pairs itertools.combinations order, then added pairs combinations order; first minimum breaks ties.",
+    "outputs": [
+      "Full per-witness score histogram and better/equal/worse counts",
+      "Best-neighbor coordinates and dual exact certificates",
+      "Per-witness move-stream digest",
+      "Completeness and provenance manifest"
+    ],
+    "question": "Does replacing exactly two occupied sites by exactly two originally vacant sites improve or tie any of the seven fixed compact winners?",
+    "schema_version": 1,
+    "source_sha256": {
+      "few_distance/checker.py": "eaba737b20bf0db23ab4952b055d412f7eaaf7e8464c35aab30e4c61775e2c90",
+      "few_distance/independent.py": "e635088263016becbfcd8fcc1e66faf5f240294b6da6f4c109b3b159a1a3c1f4",
+      "few_distance/neighborhood.py": "70f8b2c430673df74eda8c47081457d3cf722554cbce0419a1d520d22492abaa",
+      "few_distance/two_exchange.py": "cee9fe9b6564a6bd65b7e7170a20f15b55ddf6b7fddd96175904110ae0eca969",
+      "tests/test_two_exchange.py": "d96197ffbea9b59e74deeda2935961be66ad62867e8b56a1b4e7ad26386a3abe"
+    }
+  },
+  "protocol_sha256": "b6e9fbc42de208df7f3a3da792508bf238911a011f49d2e3f60c50c306908704",
+  "python": "3.9.6",
+  "reports": [
+    {
+      "best_move": {
+        "added": [
+          [
+            0,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "score": 8
+      },
+      "best_neighbor_certificate": "certificates/compact-6-n10-best-two-exchange.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "best_neighbor_score": 8,
+      "better": 0,
+      "complete": true,
+      "equal": 1,
+      "evaluated_neighbors": 14625,
+      "expected_neighbors": 14625,
+      "grid": {
+        "height": 6,
+        "width": 6
+      },
+      "histogram": {
+        "8": 1,
+        "9": 2,
+        "10": 54,
+        "11": 29,
+        "12": 167,
+        "13": 415,
+        "14": 573,
+        "15": 920,
+        "16": 1733,
+        "17": 2402,
+        "18": 2816,
+        "19": 2423,
+        "20": 1802,
+        "21": 992,
+        "22": 282,
+        "23": 14
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-6-n10.json",
+      "input_sha256": "add45b4454c72b2d6083a16cc16f4c97cf13b01c414e3b9302fe64c55628994d",
+      "move_stream_sha256": "02f7494ee11c936637a16fdd0174cfd2cd40a8c5683310da1d316b14efa7f006",
+      "n": 10,
+      "original_score": 8,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 210,
+          "distance_count": 8,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 210,
+          "distance_count": 8,
+          "errors": [],
+          "squared_distances": [
+            "2",
+            "8",
+            "16",
+            "18",
+            "24",
+            "32",
+            "34",
+            "48"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 14624
+    },
+    {
+      "best_move": {
+        "added": [
+          [
+            0,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "score": 14
+      },
+      "best_neighbor_certificate": "certificates/compact-6-n15-best-two-exchange.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "best_neighbor_score": 14,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 22050,
+      "expected_neighbors": 22050,
+      "grid": {
+        "height": 6,
+        "width": 6
+      },
+      "histogram": {
+        "14": 1,
+        "15": 44,
+        "16": 270,
+        "17": 5,
+        "18": 120,
+        "19": 170,
+        "20": 1483,
+        "21": 1385,
+        "22": 4353,
+        "23": 3228,
+        "24": 3944,
+        "25": 3562,
+        "26": 1696,
+        "27": 1115,
+        "28": 523,
+        "29": 143,
+        "30": 8
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-6-n15.json",
+      "input_sha256": "f4dd371030bebd84f557d97d32f5030a86cca199274c1feaec96107268a48fda",
+      "move_stream_sha256": "ff80cde0c1d837bc63135bf5fa31e1eacd11f93207598cc7203b4ba4c6f96aae",
+      "n": 15,
+      "original_score": 13,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 1365,
+          "distance_count": 13,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 1365,
+          "distance_count": 13,
+          "errors": [],
+          "squared_distances": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "12",
+            "16",
+            "18",
+            "22",
+            "24",
+            "32",
+            "34",
+            "36",
+            "48"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 22050
+    },
+    {
+      "best_move": {
+        "added": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "score": 21
+      },
+      "best_neighbor_certificate": "certificates/compact-6-n18-best-two-exchange.json",
+      "best_neighbor_points": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "best_neighbor_score": 21,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 23409,
+      "expected_neighbors": 23409,
+      "grid": {
+        "height": 6,
+        "width": 6
+      },
+      "histogram": {
+        "21": 4,
+        "22": 68,
+        "23": 1294,
+        "24": 3920,
+        "25": 4852,
+        "26": 362,
+        "27": 1656,
+        "28": 2515,
+        "29": 3725,
+        "30": 2897,
+        "31": 2116
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-6-n18.json",
+      "input_sha256": "2c89453634238450b93998e71dd19ce093608e4b7bdc02343376f3596bc77c9f",
+      "move_stream_sha256": "3562df0d88372590e694e6521470af3a6ba447ff065de6975b3fc6094fe12722",
+      "n": 18,
+      "original_score": 15,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 3060,
+          "distance_count": 15,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 3060,
+          "distance_count": 15,
+          "errors": [],
+          "squared_distances": [
+            "1",
+            "4",
+            "8",
+            "9",
+            "12",
+            "16",
+            "17",
+            "24",
+            "25",
+            "32",
+            "33",
+            "36",
+            "41",
+            "48",
+            "57"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 23409
+    },
+    {
+      "best_move": {
+        "added": [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            0
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "score": 21
+      },
+      "best_neighbor_certificate": "certificates/compact-6-n24-best-two-exchange.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "best_neighbor_score": 21,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 18216,
+      "expected_neighbors": 18216,
+      "grid": {
+        "height": 6,
+        "width": 6
+      },
+      "histogram": {
+        "21": 1,
+        "22": 16,
+        "23": 387,
+        "24": 1585,
+        "25": 2176,
+        "26": 244,
+        "27": 1544,
+        "28": 2070,
+        "29": 4042,
+        "30": 2673,
+        "31": 3478
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-6-n24.json",
+      "input_sha256": "7b0235a6ee45045ce2b5454500025d157134a45ae974c8119bcfae2ff47998ee",
+      "move_stream_sha256": "ddf28e98e007dbf21ad3ce2c0dbf0ca9e34bb52aceb8f961d36b70cde39379f5",
+      "n": 24,
+      "original_score": 20,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 10626,
+          "distance_count": 20,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 10626,
+          "distance_count": 20,
+          "errors": [],
+          "squared_distances": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6",
+            "8",
+            "9",
+            "11",
+            "12",
+            "16",
+            "17",
+            "18",
+            "19",
+            "22",
+            "24",
+            "25",
+            "27",
+            "33",
+            "34",
+            "43"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 18216
+    },
+    {
+      "best_move": {
+        "added": [
+          [
+            0,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "score": 10
+      },
+      "best_neighbor_certificate": "certificates/compact-7-n12-best-two-exchange.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "best_neighbor_score": 10,
+      "better": 0,
+      "complete": true,
+      "equal": 1,
+      "evaluated_neighbors": 43956,
+      "expected_neighbors": 43956,
+      "grid": {
+        "height": 7,
+        "width": 7
+      },
+      "histogram": {
+        "10": 1,
+        "12": 71,
+        "13": 18,
+        "14": 102,
+        "15": 418,
+        "16": 851,
+        "17": 1150,
+        "18": 2417,
+        "19": 3668,
+        "20": 4240,
+        "21": 4699,
+        "22": 4899,
+        "23": 4598,
+        "24": 4147,
+        "25": 3784,
+        "26": 3301,
+        "27": 2501,
+        "28": 1743,
+        "29": 889,
+        "30": 406,
+        "31": 53
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-7-n12.json",
+      "input_sha256": "fcb94cadbfbf99510529dc3274064125d2cca8c4b5548905597996c297c5212c",
+      "move_stream_sha256": "c83eeb4655d759e0fef278661e3b2c0b08cd88c21e5bd8926640d89ac33b5568",
+      "n": 12,
+      "original_score": 10,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 495,
+          "distance_count": 10,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 495,
+          "distance_count": 10,
+          "errors": [],
+          "squared_distances": [
+            "2",
+            "8",
+            "16",
+            "18",
+            "24",
+            "32",
+            "34",
+            "48",
+            "50",
+            "66"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 43955
+    },
+    {
+      "best_move": {
+        "added": [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "score": 17
+      },
+      "best_neighbor_certificate": "certificates/compact-7-n20-best-two-exchange.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "best_neighbor_score": 17,
+      "better": 0,
+      "complete": true,
+      "equal": 1,
+      "evaluated_neighbors": 77140,
+      "expected_neighbors": 77140,
+      "grid": {
+        "height": 7,
+        "width": 7
+      },
+      "histogram": {
+        "17": 1,
+        "18": 9,
+        "19": 262,
+        "20": 887,
+        "21": 202,
+        "22": 1020,
+        "23": 1273,
+        "24": 2395,
+        "25": 1242,
+        "26": 3823,
+        "27": 6673,
+        "28": 6697,
+        "29": 11794,
+        "30": 7164,
+        "31": 7916,
+        "32": 7546,
+        "33": 6728,
+        "34": 5360,
+        "35": 3372,
+        "36": 1826,
+        "37": 586,
+        "38": 274,
+        "39": 90
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-7-n20.json",
+      "input_sha256": "f1aaa5fc72b777edf97668c86ba3317d84c4a77eff6acc1158c181878059978d",
+      "move_stream_sha256": "a5df22c59ca546f03c04fda493cf2a82503e95ffbf1ce11970566456fd3feb24",
+      "n": 20,
+      "original_score": 17,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 4845,
+          "distance_count": 17,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 4845,
+          "distance_count": 17,
+          "errors": [],
+          "squared_distances": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "12",
+            "16",
+            "18",
+            "22",
+            "24",
+            "32",
+            "34",
+            "36",
+            "38",
+            "44",
+            "48",
+            "54",
+            "68"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 77139
+    },
+    {
+      "best_move": {
+        "added": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "score": 26
+      },
+      "best_neighbor_certificate": "certificates/compact-7-n30-best-two-exchange.json",
+      "best_neighbor_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "best_neighbor_score": 26,
+      "better": 0,
+      "complete": true,
+      "equal": 0,
+      "evaluated_neighbors": 74385,
+      "expected_neighbors": 74385,
+      "grid": {
+        "height": 7,
+        "width": 7
+      },
+      "histogram": {
+        "26": 5,
+        "27": 70,
+        "28": 1515,
+        "29": 3380,
+        "30": 2986,
+        "31": 6753,
+        "32": 4581,
+        "33": 6472,
+        "34": 7117,
+        "35": 11008,
+        "36": 6205,
+        "37": 8748,
+        "38": 3246,
+        "39": 4995,
+        "40": 4754,
+        "41": 2550
+      },
+      "input": "results/2026-11-08-compact-rows/certificates/compact-7-n30.json",
+      "input_sha256": "58c4fe868c794dca2c38ba12e2a0d957ad708e4d41d12c46f1f589bf90425b7e",
+      "move_stream_sha256": "892a728a34c5d8d1c0286c071162b8c72e6596ad50b9001689d42f60339446ba",
+      "n": 30,
+      "original_score": 25,
+      "original_verification": {
+        "independent": {
+          "checked_quadruples": 27405,
+          "distance_count": 25,
+          "errors": [],
+          "valid": true
+        },
+        "primary": {
+          "checked_quadruples": 27405,
+          "distance_count": 25,
+          "errors": [],
+          "squared_distances": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6",
+            "8",
+            "9",
+            "11",
+            "12",
+            "16",
+            "17",
+            "18",
+            "19",
+            "22",
+            "24",
+            "25",
+            "27",
+            "32",
+            "33",
+            "34",
+            "36",
+            "41",
+            "43",
+            "48",
+            "57"
+          ],
+          "valid": true,
+          "violating_quadruple": null
+        }
+      },
+      "worse": 74385
+    }
+  ],
+  "scope": "Fixed-witness exact two-exchange neighborhood only; no global or domain optimum.",
+  "verified_certificates": 14
+}
