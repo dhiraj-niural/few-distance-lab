@@ -1,0 +1,128 @@
+{
+  "claimed_distance_count": 17,
+  "grid": {
+    "height": 7,
+    "width": 7
+  },
+  "metric": {
+    "q_den": 1,
+    "q_num": 2
+  },
+  "points": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      4
+    ]
+  ],
+  "schema_version": 1,
+  "verification": {
+    "independent": {
+      "checked_quadruples": 4845,
+      "distance_count": 17,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 4845,
+      "distance_count": 17,
+      "errors": [],
+      "squared_distances": [
+        "2",
+        "4",
+        "6",
+        "8",
+        "12",
+        "16",
+        "18",
+        "22",
+        "24",
+        "32",
+        "34",
+        "36",
+        "38",
+        "44",
+        "48",
+        "50",
+        "54"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  }
+}

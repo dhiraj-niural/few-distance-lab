@@ -4,7 +4,11 @@ How few distances can a set of points have if every four points must determine a
 
 This project studies finite subsets of the stretched grid `(x, √2 y)`. Squared distances are integers, `dx² + 2dy²`, so every result can be checked without floating-point tolerances.
 
-## Latest result · 12 November 2026
+## Latest result · 15 November 2026
+
+The equal-score component of the saved 20-point construction is now closed: **five connected configurations, all with 17 distances, and no improving one- or two-point exit**. Board reflections reduce the exhaustive check to three representatives and **233,160 scored neighbors**. Independent distance-set enumeration agrees; all 62 tests pass. This closes one local search route, not the global problem. [Plateau result and reproduction](docs/plateau.md).
+
+## Two-point audit · 12 November 2026
 
 An exact audit of **273,781 two-point replacements** found no improvements, but one genuinely different 20-point configuration with the same count of 17 distinct distances. Two other ties are translations. Together with the earlier single-point audit, this identifies local barriers and a shape-changing plateau move, without proving global optimality or an improving path. All 54 tests pass; an independent implementation agrees on every move score. [Two-point audit](docs/two-exchange.md) · [Single-point audit](docs/one-exchange.md).
 
@@ -46,4 +50,4 @@ Use an empty destination for each study. Seeds and candidate counts are reproduc
 
 The stretched-lattice construction comes from existing mathematics. The immediate starting point is Benjamin Grayzel's [paper on Erdős problem #659](https://arxiv.org/abs/2601.09102v2), January 2026. Earlier lattice work includes [Moree and Osburn](https://arxiv.org/abs/math/0604163). This repository explores small finite instances of that construction.
 
-The next research question is whether traversing non-congruent equal-score configurations or controlled worsening steps can improve the compact baseline. No improving continuation has been demonstrated. A numerical pattern would be a conjecture to investigate, not a proof.
+The tested 20-point plateau cannot escape through non-increasing one- or two-point moves. Controlled worsening or larger coordinated moves are possible next research directions, not demonstrated improvements. A numerical pattern would be a conjecture to investigate, not a proof.

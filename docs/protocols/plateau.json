@@ -1,0 +1,39 @@
+{
+  "accounting": "Each scored neighbor counts, including repeats across representatives. Initial objective and dual certificate checks are separate. At most three admitted reflection classes including the start.",
+  "exclusions": [
+    "paid compute",
+    "network calls",
+    "model calls",
+    "stochastic search",
+    "global optimum claim"
+  ],
+  "frozen_at": "2026-11-15T09:26:05.219970+00:00",
+  "input": {
+    "path": "results/2026-11-08-compact-rows/certificates/compact-7-n20.json",
+    "sha256": "f1aaa5fc72b777edf97668c86ba3317d84c4a77eff6acc1158c181878059978d"
+  },
+  "max_candidate_evaluations": 300000,
+  "max_runtime_seconds": 60,
+  "max_states": 3,
+  "metric": "dx^2 + 2 dy^2",
+  "move_stream_serialization": "ASCII flattened removed coordinates, added coordinates, score, comma separated plus LF. Separate SHA256 per state and order.",
+  "order": "FIFO first-seen raw representatives; exact one-exchanges before exact two-exchanges; lexicographic removed then originally vacant added combinations.",
+  "outputs": [
+    "study.json with histograms, BFS edges, orbit images, statuses and hashes",
+    "dually verified admitted-state certificates",
+    "first improving certificate if found"
+  ],
+  "question": "Does the equal-score one/two-exchange component of the fixed 7x7 20-point witness admit any improving edge?",
+  "quotient": "Only board-preserving x reflection, y reflection, both, and identity. No transposition or translation. These metric-preserving graph automorphisms make scanning one representative per orbit sufficient to detect every improving edge reachable via equal-score moves.",
+  "schema_version": 1,
+  "source_sha256": {
+    "few_distance/checker.py": "eaba737b20bf0db23ab4952b055d412f7eaaf7e8464c35aab30e4c61775e2c90",
+    "few_distance/independent.py": "e635088263016becbfcd8fcc1e66faf5f240294b6da6f4c109b3b159a1a3c1f4",
+    "few_distance/neighborhood.py": "70f8b2c430673df74eda8c47081457d3cf722554cbce0419a1d520d22492abaa",
+    "few_distance/plateau.py": "14bb2d420d967e1751b453a89f63054fecf3c7cc353151c0b3cf89fa24a31999",
+    "tests/test_plateau.py": "da881e8d684dc2144d8dbe2d09b8924020a1c3410d0b5827a69f882fb7fe7ac2"
+  },
+  "stopping": "Stop at first improvement, candidate cap, or runtime cap. State cap prevents admission but scans already admitted states; any unadmitted class makes closure incomplete. COMPLETE requires every admitted neighborhood exhausted and no blocked equal classes or early stop. IMPROVEMENT_FOUND is not closure.",
+  "strict_baseline": "Shares the same initial scan, rejects equal scores, reports first improving edge or STUCK only after full initial scan. This is a deterministic strict-descent control, not a separate stochastic fixed-budget benchmark.",
+  "symmetry": "reflections"
+}

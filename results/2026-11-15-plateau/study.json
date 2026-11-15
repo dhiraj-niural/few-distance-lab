@@ -1,0 +1,1521 @@
+{
+  "admitted_states": 3,
+  "artifact_sha256": {
+    "certificates/state-0.json": "61c114d0a57c94e82ec441a6f945dbf452147dea697d5a83c8f8dea3c9e5ccda",
+    "certificates/state-1.json": "f05b1c814b22c0a70400360d39c233e7ef7854859515176745f4d58c4040e1dd",
+    "certificates/state-2.json": "bc2e6a640750370709e26a0076fe907130f23b1397fd633326bfaeb287d6aed5"
+  },
+  "closed_without_improvement": true,
+  "complete": true,
+  "created_at": "2026-11-15T09:26:06.127094+00:00",
+  "dual_certificate_checks": 4,
+  "elapsed_seconds": 0.85928525,
+  "equal_edges": [
+    {
+      "move": {
+        "added": [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "score": 17
+      },
+      "order": 2,
+      "source": 0,
+      "target": 1,
+      "target_key": "220794cbc4244aad7b1a31a9caa96248ea1e3e071c1c21d493b1db38eed03b1d",
+      "target_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    {
+      "move": {
+        "added": [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "removed": [
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "score": 17
+      },
+      "order": 2,
+      "source": 1,
+      "target": 2,
+      "target_key": "201c0ea91f66534783aab645b9ac4896fd178864c64e70a2f74a8737b4999849",
+      "target_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    },
+    {
+      "move": {
+        "added": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "removed": [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "score": 17
+      },
+      "order": 2,
+      "source": 1,
+      "target": 0,
+      "target_key": "ac6227302206741966ef27ad90705f94c646bc30b2c25121b80a62859a495314",
+      "target_points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    {
+      "move": {
+        "added": [
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "score": 17
+      },
+      "order": 2,
+      "source": 2,
+      "target": 1,
+      "target_key": "220794cbc4244aad7b1a31a9caa96248ea1e3e071c1c21d493b1db38eed03b1d",
+      "target_points": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    },
+    {
+      "move": {
+        "added": [
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "removed": [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "score": 17
+      },
+      "order": 2,
+      "source": 2,
+      "target": 1,
+      "target_key": "220794cbc4244aad7b1a31a9caa96248ea1e3e071c1c21d493b1db38eed03b1d",
+      "target_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    }
+  ],
+  "evaluated_neighbors": 233160,
+  "external_compute": false,
+  "improving_witness": null,
+  "model_calls": 0,
+  "original_score": 17,
+  "original_score_evaluations": 1,
+  "original_verification": {
+    "independent": {
+      "checked_quadruples": 4845,
+      "distance_count": 17,
+      "errors": [],
+      "valid": true
+    },
+    "primary": {
+      "checked_quadruples": 4845,
+      "distance_count": 17,
+      "errors": [],
+      "squared_distances": [
+        "2",
+        "4",
+        "6",
+        "8",
+        "12",
+        "16",
+        "18",
+        "22",
+        "24",
+        "32",
+        "34",
+        "36",
+        "38",
+        "44",
+        "48",
+        "54",
+        "68"
+      ],
+      "valid": true,
+      "violating_quadruple": null
+    }
+  },
+  "protocol": {
+    "accounting": "Each scored neighbor counts, including repeats across representatives. Initial objective and dual certificate checks are separate. At most three admitted reflection classes including the start.",
+    "exclusions": [
+      "paid compute",
+      "network calls",
+      "model calls",
+      "stochastic search",
+      "global optimum claim"
+    ],
+    "frozen_at": "2026-11-15T09:26:05.219970+00:00",
+    "input": {
+      "path": "results/2026-11-08-compact-rows/certificates/compact-7-n20.json",
+      "sha256": "f1aaa5fc72b777edf97668c86ba3317d84c4a77eff6acc1158c181878059978d"
+    },
+    "max_candidate_evaluations": 300000,
+    "max_runtime_seconds": 60,
+    "max_states": 3,
+    "metric": "dx^2 + 2 dy^2",
+    "move_stream_serialization": "ASCII flattened removed coordinates, added coordinates, score, comma separated plus LF. Separate SHA256 per state and order.",
+    "order": "FIFO first-seen raw representatives; exact one-exchanges before exact two-exchanges; lexicographic removed then originally vacant added combinations.",
+    "outputs": [
+      "study.json with histograms, BFS edges, orbit images, statuses and hashes",
+      "dually verified admitted-state certificates",
+      "first improving certificate if found"
+    ],
+    "question": "Does the equal-score one/two-exchange component of the fixed 7x7 20-point witness admit any improving edge?",
+    "quotient": "Only board-preserving x reflection, y reflection, both, and identity. No transposition or translation. These metric-preserving graph automorphisms make scanning one representative per orbit sufficient to detect every improving edge reachable via equal-score moves.",
+    "schema_version": 1,
+    "source_sha256": {
+      "few_distance/checker.py": "eaba737b20bf0db23ab4952b055d412f7eaaf7e8464c35aab30e4c61775e2c90",
+      "few_distance/independent.py": "e635088263016becbfcd8fcc1e66faf5f240294b6da6f4c109b3b159a1a3c1f4",
+      "few_distance/neighborhood.py": "70f8b2c430673df74eda8c47081457d3cf722554cbce0419a1d520d22492abaa",
+      "few_distance/plateau.py": "14bb2d420d967e1751b453a89f63054fecf3c7cc353151c0b3cf89fa24a31999",
+      "tests/test_plateau.py": "da881e8d684dc2144d8dbe2d09b8924020a1c3410d0b5827a69f882fb7fe7ac2"
+    },
+    "stopping": "Stop at first improvement, candidate cap, or runtime cap. State cap prevents admission but scans already admitted states; any unadmitted class makes closure incomplete. COMPLETE requires every admitted neighborhood exhausted and no blocked equal classes or early stop. IMPROVEMENT_FOUND is not closure.",
+    "strict_baseline": "Shares the same initial scan, rejects equal scores, reports first improving edge or STUCK only after full initial scan. This is a deterministic strict-descent control, not a separate stochastic fixed-budget benchmark.",
+    "symmetry": "reflections"
+  },
+  "protocol_sha256": "c3c3a5205a74c36d7b85ddebc336437253221b1dfc0807c7c5c78c0bc5a4c2a7",
+  "python": "3.9.6",
+  "reports": [
+    {
+      "board_reflection_orbit": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ]
+      ],
+      "complete": true,
+      "id": 0,
+      "key": "ac6227302206741966ef27ad90705f94c646bc30b2c25121b80a62859a495314",
+      "neighborhoods": {
+        "1": {
+          "better": 0,
+          "complete": true,
+          "equal": 0,
+          "evaluated_neighbors": 580,
+          "expected_neighbors": 580,
+          "histogram": {
+            "18": 4,
+            "19": 42,
+            "20": 34,
+            "21": 8,
+            "22": 52,
+            "23": 14,
+            "24": 68,
+            "25": 38,
+            "26": 56,
+            "27": 104,
+            "28": 24,
+            "29": 70,
+            "30": 44,
+            "31": 22
+          },
+          "move_stream_sha256": "c14d1abda000e5cc993dcab603640238115a7d7734594c4767cc036a73217395",
+          "worse": 580
+        },
+        "2": {
+          "better": 0,
+          "complete": true,
+          "equal": 1,
+          "evaluated_neighbors": 77140,
+          "expected_neighbors": 77140,
+          "histogram": {
+            "17": 1,
+            "18": 9,
+            "19": 262,
+            "20": 887,
+            "21": 202,
+            "22": 1020,
+            "23": 1273,
+            "24": 2395,
+            "25": 1242,
+            "26": 3823,
+            "27": 6673,
+            "28": 6697,
+            "29": 11794,
+            "30": 7164,
+            "31": 7916,
+            "32": 7546,
+            "33": 6728,
+            "34": 5360,
+            "35": 3372,
+            "36": 1826,
+            "37": 586,
+            "38": 274,
+            "39": 90
+          },
+          "move_stream_sha256": "a5df22c59ca546f03c04fda493cf2a82503e95ffbf1ce11970566456fd3feb24",
+          "worse": 77139
+        }
+      },
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "score": 17
+    },
+    {
+      "board_reflection_orbit": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ]
+      ],
+      "complete": true,
+      "id": 1,
+      "key": "220794cbc4244aad7b1a31a9caa96248ea1e3e071c1c21d493b1db38eed03b1d",
+      "neighborhoods": {
+        "1": {
+          "better": 0,
+          "complete": true,
+          "equal": 0,
+          "evaluated_neighbors": 580,
+          "expected_neighbors": 580,
+          "histogram": {
+            "18": 8,
+            "19": 78,
+            "20": 34,
+            "21": 10,
+            "22": 30,
+            "23": 40,
+            "25": 52,
+            "26": 68,
+            "27": 76,
+            "28": 64,
+            "29": 32,
+            "30": 48,
+            "31": 22,
+            "32": 18
+          },
+          "move_stream_sha256": "22d6a14db3250e93640b85cf226f8623858ce904f0b9bfcea4c5df9a7f8a992d",
+          "worse": 580
+        },
+        "2": {
+          "better": 0,
+          "complete": true,
+          "equal": 2,
+          "evaluated_neighbors": 77140,
+          "expected_neighbors": 77140,
+          "histogram": {
+            "17": 2,
+            "18": 17,
+            "19": 769,
+            "20": 867,
+            "21": 1217,
+            "22": 1442,
+            "23": 1212,
+            "24": 212,
+            "25": 2370,
+            "26": 5166,
+            "27": 5371,
+            "28": 11592,
+            "29": 8524,
+            "30": 11819,
+            "31": 9427,
+            "32": 5987,
+            "33": 5748,
+            "34": 3502,
+            "35": 1082,
+            "36": 460,
+            "37": 262,
+            "38": 92
+          },
+          "move_stream_sha256": "d8a8a8bb2aa66d44ad863cab98b91b46705883ef76451f7f2822b75e88880f02",
+          "worse": 77138
+        }
+      },
+      "points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "score": 17
+    },
+    {
+      "board_reflection_orbit": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ]
+      ],
+      "complete": true,
+      "id": 2,
+      "key": "201c0ea91f66534783aab645b9ac4896fd178864c64e70a2f74a8737b4999849",
+      "neighborhoods": {
+        "1": {
+          "better": 0,
+          "complete": true,
+          "equal": 0,
+          "evaluated_neighbors": 580,
+          "expected_neighbors": 580,
+          "histogram": {
+            "18": 8,
+            "19": 84,
+            "20": 68,
+            "22": 20,
+            "24": 42,
+            "25": 38,
+            "26": 56,
+            "27": 104,
+            "28": 24,
+            "29": 84,
+            "30": 52
+          },
+          "move_stream_sha256": "d1ed3507ce7a5e49da262f5bf453fd8de44ab5cfc70b7dd905f1fa14375bdcd4",
+          "worse": 580
+        },
+        "2": {
+          "better": 0,
+          "complete": true,
+          "equal": 2,
+          "evaluated_neighbors": 77140,
+          "expected_neighbors": 77140,
+          "histogram": {
+            "17": 2,
+            "18": 20,
+            "19": 544,
+            "20": 2654,
+            "21": 2100,
+            "22": 2,
+            "23": 30,
+            "24": 793,
+            "25": 1752,
+            "26": 4697,
+            "27": 7850,
+            "28": 9156,
+            "29": 14498,
+            "30": 10366,
+            "31": 10640,
+            "32": 7476,
+            "33": 3732,
+            "34": 828
+          },
+          "move_stream_sha256": "71eba31610f8dc3bf8a8eda6ff2d896be393cb07bacd0c851b8debb5c200de18",
+          "worse": 77138
+        }
+      },
+      "points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "score": 17
+    }
+  ],
+  "scope": "Equal-score component of this fixed witness in this grid under exactly one/two exchanges. No domain or global optimum.",
+  "status": "COMPLETE",
+  "stopping_reasons": [],
+  "strict_baseline": {
+    "accepts_equal": false,
+    "evaluated_neighbors": 77720,
+    "improving_neighbor": null,
+    "result": "STUCK",
+    "scan_complete": true,
+    "shared_initial_scan": true,
+    "start_state": 0
+  },
+  "symmetry": "reflections",
+  "unadmitted_equal_states": 0
+}
