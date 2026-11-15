@@ -19,3 +19,5 @@ The three targets come directly from the saved certificates named in `math.mjs`.
 Grid positions show physical coordinates `(x, √2 y)` while point labels and exports use integer indices `(x, y)`. Displayed distance chips are squared lengths. Arrow keys navigate the grid; Enter or Space toggles a point. A distance chip supports pointer hover, keyboard focus and tap-to-pin. Changes, construction reveal and reset can be undone. URL fragments encode the current challenge and points; malformed or out-of-range input is rejected.
 
 The interface works without external fonts or assets. Browser QA should cover a narrow mobile viewport and desktop, selection/removal, keyboard navigation, highlighted pairs, challenge switching, reveal/undo/reset, malformed state, share-link reload and exported certificate verification.
+
+The optional link-preview renderer is `tools/render_social_card.py` and uses Pillow. The game itself has no dependencies.
