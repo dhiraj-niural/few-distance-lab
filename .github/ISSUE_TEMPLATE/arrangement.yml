@@ -1,0 +1,26 @@
+name: Share a pattern or arrangement
+description: Share a board, an explanation, or a better construction.
+title: "Arrangement: "
+body:
+  - type: markdown
+    attributes:
+      value: "A useful contribution can be a construction, an explanation, or a failed idea that teaches us something. A low score is not automatically a new mathematical result."
+  - type: textarea
+    id: arrangement
+    attributes:
+      label: Your arrangement
+      description: Paste the board link or exported witness JSON. Include the board size and number of points.
+    validations:
+      required: true
+  - type: textarea
+    id: insight
+    attributes:
+      label: What did you notice?
+      description: Explain your pattern, search method, or question. If you used code or an AI tool, describe how the result was checked.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification and related work
+      description: Include the exact score, verifier output if available, and any relevant paper or discussion. It is fine to mark something as a conjecture.

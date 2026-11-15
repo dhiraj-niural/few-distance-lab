@@ -4,6 +4,12 @@ How few distances can a set of points have if every four points must determine a
 
 This project studies finite subsets of the stretched grid `(x, √2 y)`. Squared distances are integers, `dx² + 2dy²`, so every result can be checked without floating-point tolerances.
 
+## Play the challenge
+
+[Open the interactive playground](https://dhiraj-niural.github.io/few-distance-lab/). Place points on a stretched grid, inspect equal-length segments, and share or export an arrangement. Start with a solved eight-point puzzle, explore a ten-point construction, then try the twenty-point research board. Only the eight-point target is proved optimal on its stated board.
+
+The browser uses exact integer scoring. Exported witnesses work with both independent Python checkers below. [Web implementation and local preview](web/README.md). Share a pattern or candidate through the repository's arrangement issue form. No account or server is needed to play.
+
 ## Latest result · 15 November 2026
 
 The equal-score component of the saved 20-point construction is now closed: **five connected configurations, all with 17 distances, and no improving one- or two-point exit**. Board reflections reduce the exhaustive check to three representatives and **233,160 scored neighbors**. Independent distance-set enumeration agrees; all 62 tests pass. This closes one local search route, not the global problem. [Plateau result and reproduction](docs/plateau.md).

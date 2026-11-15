@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f1e9">
+  <meta name="description" content="A small geometry challenge: place points, reuse distances, and explore an exact mathematical construction. Play with verified targets and export your own configuration.">
+  <title>Few-distance lab · A geometry playground</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header"><a class="wordmark" href="./">few-distance <span>lab</span><i aria-hidden="true"></i></a><a class="source-link" href="https://github.com/dhiraj-niural/few-distance-lab">Source & research ↗</a></header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">A SMALL GEOMETRY CHALLENGE</p>
+      <h1 id="title">More points.<br><span>Fewer distances.</span></h1>
+      <p class="lede">Place points. Make their distances repeat.<br>How few different lengths can you use?</p>
+    </section>
+    <nav class="levels" aria-label="Choose a challenge" id="levels"></nav>
+    <section class="playground" aria-label="Interactive geometry challenge">
+      <div class="board-column">
+        <div class="board-top"><span id="board-label">4 × 4 stretched grid</span><span class="live-indicator">EXACT INTEGER SCORING</span></div>
+        <div class="board" id="board" role="group" aria-label="Point grid" aria-describedby="grid-help"><svg id="lines" aria-hidden="true"></svg><div id="grid-points"></div></div>
+        <div class="board-bottom"><p id="grid-help">Tap a dot to add or remove a point.<br><span>Keyboard: arrow keys to move, Enter or Space to select.</span></p><div class="board-actions"><button id="undo" class="quiet" type="button">↶ Undo</button><button id="reset" class="quiet" type="button">Reset</button></div></div>
+      </div>
+      <div class="score-column">
+        <div class="challenge-heading"><p class="eyebrow" id="challenge-number">CHALLENGE 01</p><h2 id="challenge-title">Find the pattern</h2><p id="objective"></p></div>
+        <div class="scores"><div><span class="score" id="point-count">0<span>/ 8</span></span><span class="score-label">points placed</span></div><div><span class="score accent" id="distance-count">0</span><span class="score-label">different distances</span></div></div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+        <button id="next" class="primary" type="button" hidden>Try the next challenge →</button>
+        <div class="distance-panel"><div class="section-label"><h3>Your distances</h3><span id="pair-count">0 pairs</span></div><p class="micro">Each number is a squared length. Hover, focus or tap to see its pairs.</p><div id="distances" class="distance-chips"></div><p id="distance-detail" class="distance-detail">Place two points to make your first distance.</p></div>
+        <details class="hint"><summary>A small hint</summary><p id="hint-text"></p></details>
+        <div class="tools"><button id="baseline" type="button">Reveal a construction</button><button id="share" type="button">Copy board link</button><button id="export" type="button">Export points ↓</button></div>
+        <p id="action-message" class="action-message" role="status" aria-live="polite"></p>
+        <div id="share-fallback" hidden><label for="share-url">Copy this board link</label><input id="share-url" readonly></div>
+      </div>
+    </section>
+    <section class="under-the-hood" aria-label="Explanation and reproducibility">
+      <details><summary>What is the mathematical catch?</summary><div class="detail-copy"><p>Use as few different distances as possible, while keeping this rule: <strong>every four points must determine at least three different distances.</strong> A square fails because its sides and diagonals give only two lengths.</p><p>This board is stretched vertically by √2, so the point labelled (x, y) really sits at (x, √2 y). For two grid points, their squared distance is <strong>dx² + 2dy²</strong>. The numbers stay exact integers; equal squared lengths mean equal lengths.</p><p>The stretched lattice is a known construction satisfying the four-point rule. The original Python study also checked every four-point subset of the complete boards used here. Every selection you make inherits that property.</p><p id="validity"></p><p>This is a finite playground inspired by <a href="https://arxiv.org/abs/2601.09102v2">Benjamin Grayzel’s work on Erdős problem #659</a>. The lattice construction and the underlying mathematics are prior work. This project does not claim a new theorem or AI-discovery advantage.</p></div></details>
+      <details><summary>What do the targets mean?</summary><div class="detail-copy"><p><strong>8 points, 4 × 4 board: 6 distances is optimal on this board.</strong> Exhaustive enumeration checked all 12,870 selections. This says nothing about the optimum over all points in the plane.</p><p><strong>10 points, 6 × 6 board: 8 distances is a verified construction.</strong> It is a target you can reach, not a proved minimum.</p><p><strong>20 points, 7 × 7 board: 17 distances is a verified construction.</strong> The saved construction and its equal-score component have no improving one- or two-point replacement. That is a local result. Whether this board admits 16 or fewer remains unproved in this project.</p><p>Revealing a construction loads the actual saved points. You can change them, inspect repeated lengths, or export your own witness for the independent Python checkers.</p><p><a id="certificate-link" href="https://github.com/dhiraj-niural/few-distance-lab">Current construction certificate ↗</a> · <a href="https://github.com/dhiraj-niural/few-distance-lab/blob/main/docs/results.md">Reproduce the results ↗</a></p></div></details>
+      <details><summary>Enter coordinates or verify an export</summary><div class="detail-copy"><label for="coordinates">Paste a JSON array of grid coordinates for the current challenge.</label><textarea id="coordinates" rows="4" spellcheck="false" placeholder="[[0,0], [1,0], [0,2], [1,2]]"></textarea><button id="load-coordinates" type="button">Load coordinates</button><p id="input-error" role="status"></p><p>An export is a certificate compatible with the repository’s exact verifier. Save the downloaded file and run:</p><pre><code>python3 -m few_distance verify witness.json</code></pre><p>At least four points are required for export. No account, server, analytics or external computation is used. Board links store the coordinates in the URL.</p><p>Noticed a pattern or found a better arrangement? <a href="https://github.com/dhiraj-niural/few-distance-lab/issues/new?template=arrangement.yml">Share it with a board link or exported witness ↗</a></p></div></details>
+      <details><summary>Read further</summary><div class="detail-copy"><p><a href="https://arxiv.org/abs/2601.09102v2">Grayzel, Erdős problem #659 (2026)</a> supplies the mathematical starting point. <a href="https://arxiv.org/abs/math/0604163">Moree and Osburn</a> study distinct distances in lattices.</p><p>For a related puzzle with the opposite objective, try Oscar Cunningham’s <a href="https://oscarcunningham.com/670/unique-distancing-problem/">Unique Distancing Problem</a>: make all distances different. Here, we want them to repeat.</p></div></details>
+    </section>
+  </main>
+  <footer><span>Few-distance lab · Dhiraj Khanal</span><span>A finite experiment in a much bigger question.</span></footer>
+  <noscript>This playground needs JavaScript to score and edit points. The source and research links above remain available.</noscript>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>
