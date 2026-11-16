@@ -75,8 +75,13 @@ function drawLines() {
   }
   document.querySelectorAll('.point').forEach(button => button.classList.toggle('in-pair', active.has(button.dataset.key)));
   document.querySelectorAll('.distance-chip').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.distance) === distance)));
+  // The same length can come from visibly different gaps: 9 = 3² + 2·0² = 1² + 2·2².
+  const shapes = [...new Set(pairs.map(([a, b]) => {
+    const dx = Math.abs(points[a][0] - points[b][0]), dy = Math.abs(points[a][1] - points[b][1]);
+    return `${dx}² + 2·${dy}²`;
+  }))].sort();
   $('distance-detail').textContent = pairs.length
-    ? `Squared length ${distance}: ${pairs.length} ${pairs.length === 1 ? 'pair has' : 'pairs share'} it.`
+    ? `${distance} = ${shapes.join(' = ')}. ${pairs.length} ${pairs.length === 1 ? 'pair has' : 'pairs share'} this length${shapes.length > 1 ? `, through ${shapes.length} different gaps (across² + 2·up²)` : ''}.`
     : points.length < 2 ? 'Place two points to make your first distance.' : 'A repeated length counts once. Tall bars are doing the work.';
 }
 
