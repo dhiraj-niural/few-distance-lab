@@ -4,15 +4,19 @@ How few distances can a set of points have if every four points must determine a
 
 This project studies finite subsets of the stretched grid `(x, √2 y)`. Squared distances are integers, `dx² + 2dy²`, so every result can be checked without floating-point tolerances.
 
-## Play the challenge
+## Play
 
-[Open the interactive playground](https://dhiraj-niural.github.io/few-distance-lab/). Place points on a stretched grid, inspect equal-length segments, and share or export an arrangement. Start with a solved eight-point puzzle, explore a ten-point construction, then try the twenty-point research board. Only the eight-point target is proved optimal on its stated board.
+[Open the puzzle](https://dhiraj-niural.github.io/few-distance-lab/). Four boards, each with a proven minimum, plus free play on any board from 4×4 to 7×7. The board shows what every next point would cost, a restart-free local search can be watched failing or succeeding on the same board, and a small demo shows why the grid is stretched by √2 and not by 1, √3 or 2.
 
-The browser uses exact integer scoring. Exported witnesses work with both independent Python checkers below. [Web implementation and local preview](web/README.md). Share a pattern or candidate through the repository's arrangement issue form. No account or server is needed to play.
+Scoring is exact integer arithmetic in the browser. Exports are certificates for both Python checkers below. No account, server or analytics. [Web implementation and local preview](web/README.md).
 
-## Latest result · 15 November 2026
+## Latest result · 16 November 2026
 
-The equal-score component of the saved 20-point construction is now closed: **five connected configurations, all with 17 distances, and no improving one- or two-point exit**. Board reflections reduce the exhaustive check to three representatives and **233,160 scored neighbors**. Independent distance-set enumeration agrees; all 62 tests pass. This closes one local search route, not the global problem. [Plateau result and reproduction](docs/plateau.md).
+**The minimum is now proven for every point count on every square board up to 7×7.** Twenty points on the 7×7 board need 17 distances: an exhaustive branch and bound rules out 16 among 28 trillion subsets after 1.7 million nodes. Two independent implementations agree. The 6×6 ten-point target of 8 is also optimal. This replaces the local audits below with a global answer for these boards; it is not a bound for the plane and not a new theorem. [Proven minima and reproduction](docs/exact.md).
+
+## Plateau audit · 15 November 2026
+
+The equal-score component of the saved 20-point construction is closed: **five connected configurations, all with 17 distances, and no improving one- or two-point exit**. Board reflections reduce the exhaustive check to three representatives and **233,160 scored neighbors**. Independent distance-set enumeration agrees. [Plateau result and reproduction](docs/plateau.md).
 
 ## Two-point audit · 12 November 2026
 
@@ -38,6 +42,7 @@ Python 3.9 or later. Standard library only. Run from the repository root:
 ```sh
 python3 -m unittest discover -v
 python3 -m few_distance verify results/2026-11-06/certificates/exact-4x4-n8.json
+python3 -m few_distance exact --width 7 --height 7 --points 20
 python3 -m few_distance search --width 5 --height 5 --points 12 --method swap --budget 2000 --seed 0
 python3 -m few_distance study --output results/reproduction
 ```
@@ -50,10 +55,11 @@ Use an empty destination for each study. Seeds and candidate counts are reproduc
 - [Recorded study](results/2026-11-06/study.json) and [individual trials](results/2026-11-06/trials.csv)
 - `few_distance/checker.py`: exact integer verification, independent of search
 - `few_distance/independent.py`: rational verification and a separate exhaustive oracle
+- `few_distance/exact.py` and `tools/exact_bb.c`: two branch-and-bound proofs of board minima
 - `few_distance/search.py`: exhaustive enumeration, random and swap baselines
 
 ## Research context
 
-The stretched-lattice construction comes from existing mathematics. The immediate starting point is Benjamin Grayzel's [paper on Erdős problem #659](https://arxiv.org/abs/2601.09102v2), January 2026. Earlier lattice work includes [Moree and Osburn](https://arxiv.org/abs/math/0604163). This repository explores small finite instances of that construction.
+The question is [Erdős problem #659](https://www.erdosproblems.com/659). The √2-stretched lattice and its distance count come from [Moree and Osburn](https://arxiv.org/abs/math/0604163) and from Lund and Sheffer; Benjamin Grayzel's [January 2026 paper](https://arxiv.org/abs/2601.09102v2) excluded the last two-distance configuration and completed the answer. This repository explores small finite boards of that construction and adds no mathematics to it.
 
-The tested 20-point plateau cannot escape through non-increasing one- or two-point moves. Controlled worsening or larger coordinated moves are possible next research directions, not demonstrated improvements. A numerical pattern would be a conjecture to investigate, not a proof.
+Open here: exact minima beyond 7×7, rectangular boards, and whether the optimal shapes (full rows or columns at regular spacing) follow a pattern that can be proved for all sizes. A numerical pattern would be a conjecture, not a proof.

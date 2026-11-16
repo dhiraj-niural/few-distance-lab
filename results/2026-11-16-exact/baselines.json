@@ -1,0 +1,191 @@
+{
+ "note": "random and swap: python3 -m few_distance search, seeds 0-9, budget 2000. plain: node tools/bot_study.mjs, seeds 0-199, budget 2000, stops at the minimum. proof: nodes visited refuting (minimum - 1) directly; python = few_distance.exact.find_within, c = tools/exact_bb.c.",
+ "eight": {
+  "random": {
+   "best": 6,
+   "median": 7.0,
+   "worst": 8,
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    8,
+    7,
+    6
+   ]
+  },
+  "swap": {
+   "best": 6,
+   "median": 6.0,
+   "worst": 7,
+   "scores": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    7,
+    7,
+    6
+   ]
+  },
+  "plain": {
+   "seeds": 200,
+   "budget": 2000,
+   "hits": 2,
+   "median": 7,
+   "worst": 12
+  },
+  "proof": {
+   "python_nodes": 130,
+   "c_nodes": 132
+  }
+ },
+ "twelve": {
+  "random": {
+   "best": 13,
+   "median": 13.0,
+   "worst": 13,
+   "scores": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13
+   ]
+  },
+  "swap": {
+   "best": 10,
+   "median": 10.0,
+   "worst": 11,
+   "scores": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    11,
+    11,
+    10,
+    11
+   ]
+  },
+  "plain": {
+   "seeds": 200,
+   "budget": 2000,
+   "hits": 122,
+   "median": 10,
+   "worst": 14
+  },
+  "proof": {
+   "python_nodes": 3138,
+   "c_nodes": 3282
+  }
+ },
+ "ten": {
+  "random": {
+   "best": 11,
+   "median": 12.0,
+   "worst": 13,
+   "scores": [
+    12,
+    11,
+    12,
+    12,
+    13,
+    13,
+    12,
+    11,
+    12,
+    13
+   ]
+  },
+  "swap": {
+   "best": 9,
+   "median": 9.0,
+   "worst": 10,
+   "scores": [
+    9,
+    9,
+    9,
+    10,
+    9,
+    9,
+    9,
+    9,
+    10,
+    10
+   ]
+  },
+  "plain": {
+   "seeds": 200,
+   "budget": 2000,
+   "hits": 1,
+   "median": 9,
+   "worst": 17
+  },
+  "proof": {
+   "python_nodes": 6484,
+   "c_nodes": 6615
+  }
+ },
+ "twenty": {
+  "random": {
+   "best": 27,
+   "median": 28.0,
+   "worst": 29,
+   "scores": [
+    28,
+    28,
+    28,
+    27,
+    29,
+    28,
+    27,
+    27,
+    28,
+    27
+   ]
+  },
+  "swap": {
+   "best": 17,
+   "median": 19.0,
+   "worst": 20,
+   "scores": [
+    19,
+    19,
+    19,
+    19,
+    19,
+    20,
+    19,
+    19,
+    19,
+    17
+   ]
+  },
+  "plain": {
+   "seeds": 200,
+   "budget": 2000,
+   "hits": 79,
+   "median": 18,
+   "worst": 21
+  },
+  "proof": {
+   "python_nodes": 1696518,
+   "c_nodes": 1927690
+  }
+ }
+}

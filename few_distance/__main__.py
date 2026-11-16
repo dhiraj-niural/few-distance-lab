@@ -18,6 +18,11 @@ def main():
     search.add_argument("--budget", type=int, default=1000)
     search.add_argument("--seed", type=int, default=0)
     search.add_argument("--output", type=Path)
+    exact = sub.add_parser("exact", help="prove the minimum for n points by branch and bound")
+    exact.add_argument("--width", type=int, required=True)
+    exact.add_argument("--height", type=int, required=True)
+    exact.add_argument("--points", type=int, required=True)
+    exact.add_argument("--output", type=Path)
     study = sub.add_parser("study", help="reproduce the bounded initial study")
     study.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
@@ -37,7 +42,10 @@ def main():
         from .search import baseline, exhaustive
         from .checker import verify_certificate
         from .independent import audit_certificate
-        if args.method == "exhaustive":
+        if args.command == "exact":
+            from .exact import minimum
+            result = minimum(args.width, args.height, args.points)
+        elif args.method == "exhaustive":
             result = exhaustive(args.width, args.height, args.points, max_evaluations=args.budget)
         else:
             result = baseline(args.width, args.height, args.points, args.method, args.seed, args.budget)

@@ -1,0 +1,253 @@
+{
+ "grid": {
+  "width": 3,
+  "height": 3
+ },
+ "metric": {
+  "q_num": 2,
+  "q_den": 1
+ },
+ "claim": "minimum distinct distances over all n-subsets of this grid",
+ "rows": [
+  {
+   "n": 2,
+   "minimum": 1,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "python_refutation_nodes": 0,
+   "c_refutation_nodes": 0
+  },
+  {
+   "n": 3,
+   "minimum": 2,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "python_refutation_nodes": 8,
+   "c_refutation_nodes": 8
+  },
+  {
+   "n": 4,
+   "minimum": 3,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "python_refutation_nodes": 11,
+   "c_refutation_nodes": 11
+  },
+  {
+   "n": 5,
+   "minimum": 4,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "python_refutation_nodes": 21,
+   "c_refutation_nodes": 21
+  },
+  {
+   "n": 6,
+   "minimum": 5,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "python_refutation_nodes": 17,
+   "c_refutation_nodes": 17
+  },
+  {
+   "n": 7,
+   "minimum": 7,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "python_refutation_nodes": 50,
+   "c_refutation_nodes": 50
+  },
+  {
+   "n": 8,
+   "minimum": 8,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "python_refutation_nodes": 17,
+   "c_refutation_nodes": 17
+  },
+  {
+   "n": 9,
+   "minimum": 8,
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "python_refutation_nodes": 0,
+   "c_refutation_nodes": 0
+  }
+ ]
+}
